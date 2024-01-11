@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/todolist.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">TO DO LIST</h1>
+        <div class="add-todo">
+            <input type="text" class="input-todo" placeholder="할 일을 입력하세요." onkeypress="inputTodoValue(event)">
+            <button class="add-btn" onclick="clickAddBtn()">+</button>
+        </div>
+        <ul class="todo-list"></ul>
+        <p class="task"></p>
+        <button class="delete-all" onclick="clickDeleteAllBtn()">모두 삭제</button>
+    </div>
+    <script src="./js/todolist.js"></script>
+</body>
+</html>
